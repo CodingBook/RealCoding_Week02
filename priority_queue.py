@@ -10,12 +10,12 @@ class PriorityQueue:
   def pop(self):
     if len(self.heap) > 1:
       self._swap(0, len(self.heap) - 1)
-      item = self.heap.pop()
+      extracted = self.heap.pop()
       self._sift_down(0)
-      return item
+      return extracted[0]
     elif len(self.heap) == 1:
-      item = self.heap.pop()
-      return item
+      extracted[0] = self.heap.pop()
+      return extracted[0]
     else:
       return None
 
