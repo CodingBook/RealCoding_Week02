@@ -1,6 +1,6 @@
 class PriorityQueue:
 
-  # 리스트를 이용해 힙 생성, 
+  # 리스트를 이용해 힙 생성
   # 우선순위가 높을 수록(==priority 값이 낮을 수록) 루트로 오게 만들기 (최소힙)
   def __init__(self):
     self.heap = []
@@ -34,7 +34,7 @@ class PriorityQueue:
       else:
         break
 
-  # 루트에 있는걸 알맞게 배치하는 함수, 
+  # 루트에 있는걸 알맞게 배치하는 함수
   def _sift_down(self, index):
     while True:
       left_child_index = 2 * index + 1
