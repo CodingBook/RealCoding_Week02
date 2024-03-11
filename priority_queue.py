@@ -29,7 +29,7 @@ class PriorityQueue:
       else:
         break
 
-  # 루트에 있는걸 알맞게 배치하는 함수, 
+  # 루트에 있는걸 알맞게 배치하는 함수
   def _sift_down(self, index):
     while True:
       left_child_index = 2 * index + 1
