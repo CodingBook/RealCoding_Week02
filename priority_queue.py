@@ -54,6 +54,7 @@ class PriorityQueue:
         index = smallest
       else:
         break
-
+  
+  #그냥 스왑
   def _swap(self, i, j):
     self.heap[i], self.heap[j] = self.heap[j], self.heap[i]
